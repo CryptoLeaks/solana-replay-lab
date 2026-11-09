@@ -1,0 +1,36 @@
+{
+  "selected": "recentPeakRecovery2",
+  "train": {
+    "netLamports": "167464204",
+    "netSOL": 0.167464204,
+    "fills": 36,
+    "mints": 18,
+    "failed": 2,
+    "rejected": {
+      "max_slippage": 2
+    },
+    "maxDrawdown": 0.004245918148943497
+  },
+  "validation": {
+    "netLamports": "296843704",
+    "netSOL": 0.296843704,
+    "fills": 66,
+    "mints": 33,
+    "failed": 2,
+    "rejected": {
+      "max_slippage": 3
+    },
+    "maxDrawdown": 0.013545927951877122
+  },
+  "fullDev": {
+    "netLamports": "421744109",
+    "netSOL": 0.421744109,
+    "fills": 104,
+    "mints": 52,
+    "failed": 5,
+    "rejected": {
+      "max_slippage": 5
+    },
+    "maxDrawdown": 0.01394451051300465
+  }
+}

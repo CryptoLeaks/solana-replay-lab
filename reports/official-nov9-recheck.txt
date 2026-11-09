@@ -1,0 +1,25 @@
+(node:7) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+(Use `node --trace-warnings ...` to show where the warning was created)
+kit memecoin-backtest-48h-01 dev: verified 38 files
+dataset src-calib: 128058 events
+bot <BOT> @ 7cf485c1a875ebb1304b0cadf39068d57935411b: 30 entries
+grading: two executions
+memecoin-backtest-48h-01 dev, driver process
+bot       <BOT> @ 7cf485c1a875ebb1304b0cadf39068d57935411b (uncommitted changes not graded)
+status    finished
+net PnL   0.421744109 SOL  (return 0.042174410, 90% interval 0.021622792 .. 0.866987640 SOL)
+top coins 3 coins made 40% of the gains; without them net PnL is 0.07 SOL
+trading   104 fills over 52 coins, 52 round trips, win rate 0.538461538, max drawdown 0.013944510, 5 rejected, 5 failed
+fees      0.200513993 SOL curve + 0.011445000 SOL tx; at 2x fees net PnL 0.206958229 SOL
+guardrails met (coins ok: 52 hold a round trip of at least 0.010000000 SOL, over 52 such round trips, drawdown ok)
+cost      unpriced over 0 usage lines (provenance none)
+authored  0.000000000 of 857 counted lines
+eligible  ranked yes, prize no, efficiency no (no_transcripts, coverage_below_gate, cost_unpriced)
+flags     chain_warnings, fee_fallback
+action_log_sha256 0d9c5daaedb57db83fb37c0ec6d79e76dc17e8bb4be2c0d319546d2a66bcf6e7
+result_sha256     33c5330c13870ef99f3176c4255bfe8c8bd6fb87bf59f19dd2a42a961fd1c84c
+L1 regrade        reproduced byte for byte
+entry             not a house account's, not a baseline, no transcripts (--house, --baseline and the transcripts are part of the score)
+the kit's grader is this checkout's; nothing was compared: a server grading with the process driver records this result_sha256 only for this commit entered as the entry line says (give its result_sha256 with --expect to compare)
+note: <BOT> has uncommitted changes, which are not graded (the server grades the commit; --worktree grades the files as they are)
+note: process driver: the bot ran on this machine unisolated and the score records no image digest; a server grading in its docker sandbox records one, so only a server on the process driver (a dev server) records this result_sha256

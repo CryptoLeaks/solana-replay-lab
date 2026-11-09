@@ -1,0 +1,126 @@
+TAP version 13
+# (node:19) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: qualifying diversified flow buys with bounded amount
+ok 1 - qualifying diversified flow buys with bounded amount
+  ---
+  duration_ms: 1.869089
+  type: 'test'
+  ...
+# Subtest: same inputs produce same decisions
+ok 2 - same inputs produce same decisions
+  ---
+  duration_ms: 1.011085
+  type: 'test'
+  ...
+# Subtest: one trader cannot satisfy participation filter
+ok 3 - one trader cannot satisfy participation filter
+  ---
+  duration_ms: 0.269777
+  type: 'test'
+  ...
+# Subtest: no repeated entry in a mint
+ok 4 - no repeated entry in a mint
+  ---
+  duration_ms: 0.441827
+  type: 'test'
+  ...
+# Subtest: cash reserve and pending positions respected
+ok 5 - cash reserve and pending positions respected
+  ---
+  duration_ms: 0.226041
+  type: 'test'
+  ...
+# Subtest: completed curves never bought
+ok 6 - completed curves never bought
+  ---
+  duration_ms: 0.332001
+  type: 'test'
+  ...
+# Subtest: drawdown latch prevents new risk permanently
+ok 7 - drawdown latch prevents new risk permanently
+  ---
+  duration_ms: 0.25867
+  type: 'test'
+  ...
+# Subtest: stops sell actual available tokens
+ok 8 - stops sell actual available tokens
+  ---
+  duration_ms: 0.254524
+  type: 'test'
+  ...
+# Subtest: pending sell is not duplicated
+ok 9 - pending sell is not duplicated
+  ---
+  duration_ms: 0.527075
+  type: 'test'
+  ...
+# Subtest: halted strategy keeps history bounded
+ok 10 - halted strategy keeps history bounded
+  ---
+  duration_ms: 5.585175
+  type: 'test'
+  ...
+# Subtest: pending purchase reserves both notional and transaction fee
+ok 11 - pending purchase reserves both notional and transaction fee
+  ---
+  duration_ms: 0.238389
+  type: 'test'
+  ...
+# Subtest: pending purchase of same mint is not duplicated
+ok 12 - pending purchase of same mint is not duplicated
+  ---
+  duration_ms: 0.116045
+  type: 'test'
+  ...
+# Subtest: recovery requires final two trades to be buys
+ok 13 - recovery requires final two trades to be buys
+  ---
+  duration_ms: 0.101162
+  type: 'test'
+  ...
+# Subtest: expired peak cannot trigger a stale pullback
+ok 14 - expired peak cannot trigger a stale pullback
+  ---
+  duration_ms: 0.198659
+  type: 'test'
+  ...
+# Subtest: ten percent liquidation profit closes the position
+ok 15 - ten percent liquidation profit closes the position
+  ---
+  duration_ms: 0.157909
+  type: 'test'
+  ...
+# Subtest: hold horizon closes an otherwise neutral position
+ok 16 - hold horizon closes an otherwise neutral position
+  ---
+  duration_ms: 0.10628
+  type: 'test'
+  ...
+# Subtest: peak beyond the retained 256 trades is forgotten
+ok 17 - peak beyond the retained 256 trades is forgotten
+  ---
+  duration_ms: 1.152618
+  type: 'test'
+  ...
+# Subtest: hold age exactly 300 stays open; age 301 closes
+ok 18 - hold age exactly 300 stays open; age 301 closes
+  ---
+  duration_ms: 0.146101
+  type: 'test'
+  ...
+# Subtest: failed sell can retry when pending outcome is cleared
+ok 19 - failed sell can retry when pending outcome is cleared
+  ---
+  duration_ms: 0.124287
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 138.551944

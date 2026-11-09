@@ -1,0 +1,6 @@
+.env*
+*keypair*
+credentials*
+transcripts*
+node_modules/
+*.tar.gz

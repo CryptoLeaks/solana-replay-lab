@@ -1,0 +1,24 @@
+kit memecoin-backtest-48h-01 dev: verified 38 files
+dataset src-calib: 128058 events
+bot <KIT>/baselines/pilot/reversion @ worktree@aba7e3cbbcfc: 4 entries
+grading: two executions
+memecoin-backtest-48h-01 dev, driver process
+bot       <KIT>/baselines/pilot/reversion @ worktree@aba7e3cbbcfc
+status    finished
+net PnL   -3.705049793 SOL  (return -0.370504979, 90% interval -6.688686427 .. -1.071050615 SOL)
+top coins 3 coins made 45% of the gains; without them net PnL is -4.72 SOL
+trading   2320 fills over 198 coins, 424 round trips, win rate 0.266509433, max drawdown 0.462208602, 71 rejected, 60 failed
+fees      1.653781791 SOL curve + 0.249900000 SOL tx; at 2x fees net PnL -5.546529104 SOL
+guardrails met (coins ok: 198 hold a round trip of at least 0.010000000 SOL, over 424 such round trips, drawdown ok)
+cost      unpriced over 0 usage lines (provenance none)
+authored  0.000000000 of 283 counted lines
+eligible  ranked yes, prize no, efficiency no (no_transcripts, coverage_below_gate, cost_unpriced, below_hold_cash)
+flags     chain_warnings, fee_fallback
+action_log_sha256 9d0faf7721621866610a6a32cc3e4e4e2d2410be09522e3b8a42fb234538d3a5
+result_sha256     6773194f23a06f8f80ed6c57863ae54e66a44849315b3347edc483b3d5809e9b
+L1 regrade        reproduced byte for byte
+entry             not a house account's, not a baseline, no transcripts (--house, --baseline and the transcripts are part of the score)
+this result_sha256 cannot equal the server's:
+  - node: the server's harness runs v22.23.4, this one v24.22.1
+note: the kit holds 1 file(s) kit.json does not list (not read): package.json
+note: process driver: the bot ran on this machine unisolated and the score records no image digest; a server grading in its docker sandbox records one, so only a server on the process driver (a dev server) records this result_sha256

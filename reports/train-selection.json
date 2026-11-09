@@ -1,0 +1,80 @@
+{
+  "rows": [
+    {
+      "name": "defaults",
+      "params": {},
+      "result": {
+        "netLamports": "-317457008",
+        "netSOL": -0.317457008,
+        "fills": 28,
+        "mints": 14,
+        "failed": 0,
+        "rejected": {
+          "max_slippage": 3
+        },
+        "maxDrawdown": 0.0317457013
+      }
+    },
+    {
+      "name": "recovery3",
+      "params": {
+        "confirmBuys": 3
+      },
+      "result": {
+        "netLamports": "-418645899",
+        "netSOL": -0.418645899,
+        "fills": 26,
+        "mints": 13,
+        "failed": 0,
+        "rejected": {
+          "max_slippage": 2
+        },
+        "maxDrawdown": 0.04342309953283598
+      }
+    },
+    {
+      "name": "shortRecovery2",
+      "params": {
+        "confirmBuys": 2,
+        "stop": "90",
+        "takeProfit": "110",
+        "maxHold": 300
+      },
+      "result": {
+        "netLamports": "-104389251",
+        "netSOL": -0.104389251,
+        "fills": 24,
+        "mints": 12,
+        "failed": 0,
+        "rejected": {
+          "max_slippage": 3
+        },
+        "maxDrawdown": 0.012745088667061071
+      }
+    },
+    {
+      "name": "recentPeakRecovery2",
+      "params": {
+        "recentPeak": true,
+        "peakLow": "70",
+        "peakHigh": "90",
+        "confirmBuys": 2,
+        "stop": "90",
+        "takeProfit": "110",
+        "maxHold": 300
+      },
+      "result": {
+        "netLamports": "167464204",
+        "netSOL": 0.167464204,
+        "fills": 36,
+        "mints": 18,
+        "failed": 2,
+        "rejected": {
+          "max_slippage": 2
+        },
+        "maxDrawdown": 0.004245918148943497
+      }
+    }
+  ],
+  "selected": "recentPeakRecovery2"
+}

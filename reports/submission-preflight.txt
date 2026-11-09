@@ -1,0 +1,41 @@
+(node:11) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+(Use `node --trace-warnings ...` to show where the warning was created)
+kit memecoin-backtest-48h-01 dev: verified 38 files
+repository <BOT> @ worktree@d6160253afd5: 30 entries
+check memecoin-backtest-48h-01 (dev kit): <BOT> at worktree@d6160253afd5, received 2026-11-08T15:49:17.223Z, no transcripts
+
+pass           competition_open         now (2026-11-08T15:49:17.223Z) is between the opening, 2026-11-07T06:00:00.000Z, and the entry deadline, 2026-11-10T01:00:00.000Z; the site also checks the competition is open when you submit
+pass           snapshot                 30 files, 93,509 bytes at worktree@d6160253afd5: within the intake's caps (each file at most 100 MiB, at most 100,000 entries, the archive at most 1 GiB and the repository at most 512 MiB)
+pass           license_osi              LICENSE declares SPDX-License-Identifier: MIT, OSI-approved
+pass           entrypoint               main.ts at the root selects node22, which memecoin-backtest-48h-01 accepts
+pass           strategy_note            STRATEGY.md at the root (2557 bytes)
+skip           committed_secret         no --env-file given, so no secret value to look for here: when you submit, the site reads the entry's whole history for every form of each secret you pushed for memecoin-backtest-48h-01 (makefun secrets push); pass --env-file <the .env you push> to look for them here first
+FAIL           transcripts_present      no transcripts were uploaded
+                                        fix: Bundle the agent sessions that built this entry (node cli/makefun.mjs bundle --repo <your repository> --out transcripts.tar.gz, run from inside the unpacked kit), sign the entry message over them, and submit again before 2026-11-10T01:00:00.000Z.
+skip           thinking_wellformed      no transcript session parsed, so there is nothing to check (transcripts_present)
+skip           thinking_in_window       no transcript session parsed, so there is nothing to check (transcripts_present)
+skip           thinking_committed       the entry is not signed: no entry message commits its transcripts; where the prizes are escrowed, submit --keypair signs the entry message over exactly the transcripts it uploads, and the site checks it at submission
+skip           thinking_reproduces      no transcript session parsed, so there is nothing to check (transcripts_present)
+skip           thinking_on_task         no transcript session parsed, so there is nothing to check (transcripts_present)
+skip           thinking_turns           no transcript session parsed, so there is nothing to check (transcripts_present)
+skip           thinking_priced          no transcript session parsed, so there is nothing to check (transcripts_present)
+skip           thinking_revised         no transcript session parsed, so there is nothing to check (transcripts_present)
+skip           thinking_fresh           no transcript session parsed, so there is nothing to check (transcripts_present)
+at submission  repo_public              the site reads the repository from GitHub when you submit: it must be public then
+                                        to pass: Make <BOT> public, then submit again before 2026-11-10T01:00:00.000Z.
+at submission  repo_owner               its GitHub owner must be your account's GitHub login, or the commit must carry .makefun/owner.json naming one of your account's entry wallets (a wallet linked to it, or a connected agent's wallet)
+                                        to pass: Commit .makefun/owner.json containing {"wallet": "<your wallet address>"} to <BOT> (or sign in with the GitHub account that owns it), then submit the new commit before 2026-11-10T01:00:00.000Z.
+at submission  repo_created_after_open  GitHub's creation time of the repository must be at or after the opening, 2026-11-07T06:00:00.000Z
+                                        to pass: Create a new repository (after 2026-11-07T06:00:00.000Z), push your work to it, and submit it before 2026-11-10T01:00:00.000Z. For a source bundle, start the new repository's history after 2026-11-07T06:00:00.000Z with (cd <your repository> && node <the unpacked kit>/cli/makefun.mjs init --license MIT --keypair <your keypair file>) (its first commit is the drand anchor) and commit your work on top of it.
+at submission  commit_in_repo           the commit you submit must be pushed to a branch of the repository
+                                        to pass: Push the commit to <BOT>, or submit a commit that is there, before 2026-11-10T01:00:00.000Z.
+at submission  duplicate_snapshot       the files must differ from every other account's earlier entry: an unchanged starter or baseline is refused once someone has entered it
+                                        to pass: Submit your own work: an entry's files must differ from every other account's earlier entry's. Submit it before 2026-11-10T01:00:00.000Z.
+
+note: the kit holds 1 file(s) kit.json does not list (not read): package.json
+note: the files of <BOT> as they are were checked, not a commit: the site takes the commit you submit
+note: no --transcripts given: memecoin-backtest-48h-01 requires them, so transcripts_present fails as the site would (bundle them: node cli/makefun.mjs bundle --repo <your repository> --out transcripts.tar.gz)
+note: grading is grade-local's, not check's: it runs the entry twice as the server does and prints the score, the guardrails and whether it could take a prize (RULES.txt, Grade locally)
+
+5 passed, 1 failed, 10 skipped, 5 checked at submission
+not ready: fix transcripts_present, then check again

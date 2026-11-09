@@ -1,0 +1,42 @@
+[
+  {
+    "name": "graduation70",
+    "params": {
+      "minReserve": "70000000000",
+      "maxReserve": "90000000000",
+      "recentPeak": true,
+      "peakLow": "90",
+      "peakHigh": "100",
+      "confirmBuys": 2,
+      "stop": "95",
+      "takeProfit": "0",
+      "maxHold": 3000
+    },
+    "result": {
+      "netSOL": -0.062116918,
+      "mints": 6,
+      "drawdown": 0.0065347005,
+      "fills": 12
+    }
+  },
+  {
+    "name": "graduation60",
+    "params": {
+      "minReserve": "60000000000",
+      "maxReserve": "90000000000",
+      "recentPeak": true,
+      "peakLow": "90",
+      "peakHigh": "100",
+      "confirmBuys": 2,
+      "stop": "90",
+      "takeProfit": "120",
+      "maxHold": 3000
+    },
+    "result": {
+      "netSOL": 0.014665676,
+      "mints": 6,
+      "drawdown": 0.007432763282907701,
+      "fills": 12
+    }
+  }
+]

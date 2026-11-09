@@ -1,0 +1,151 @@
+{
+  "method": "20 fixed failure keys on the same market day; changes execution failures only, not future market returns. Candidate parameters fixed before these trials.",
+  "trials": [
+    {
+      "trial": 1,
+      "netSOL": 0.430300642,
+      "maxDrawdown": 0.017552735242720195,
+      "mints": 52,
+      "failed": 4
+    },
+    {
+      "trial": 2,
+      "netSOL": 0.337632267,
+      "maxDrawdown": 0.017100853491529556,
+      "mints": 52,
+      "failed": 7
+    },
+    {
+      "trial": 3,
+      "netSOL": 0.452209692,
+      "maxDrawdown": 0.01568489827085171,
+      "mints": 53,
+      "failed": 2
+    },
+    {
+      "trial": 4,
+      "netSOL": 0.434945903,
+      "maxDrawdown": 0.015709153076972314,
+      "mints": 54,
+      "failed": 1
+    },
+    {
+      "trial": 5,
+      "netSOL": 0.4847814,
+      "maxDrawdown": 0.010422059783432105,
+      "mints": 52,
+      "failed": 3
+    },
+    {
+      "trial": 6,
+      "netSOL": 0.469176932,
+      "maxDrawdown": 0.013906361795058313,
+      "mints": 52,
+      "failed": 3
+    },
+    {
+      "trial": 7,
+      "netSOL": 0.43201096,
+      "maxDrawdown": 0.015707062546055688,
+      "mints": 54,
+      "failed": 3
+    },
+    {
+      "trial": 8,
+      "netSOL": 0.358666906,
+      "maxDrawdown": 0.018467853260713922,
+      "mints": 53,
+      "failed": 5
+    },
+    {
+      "trial": 9,
+      "netSOL": 0.440923262,
+      "maxDrawdown": 0.015701714049861495,
+      "mints": 54,
+      "failed": 1
+    },
+    {
+      "trial": 10,
+      "netSOL": 0.416272122,
+      "maxDrawdown": 0.01571055933698777,
+      "mints": 53,
+      "failed": 2
+    },
+    {
+      "trial": 11,
+      "netSOL": 0.435938038,
+      "maxDrawdown": 0.015709153076972314,
+      "mints": 54,
+      "failed": 0
+    },
+    {
+      "trial": 12,
+      "netSOL": 0.429611919,
+      "maxDrawdown": 0.01571860316180518,
+      "mints": 54,
+      "failed": 2
+    },
+    {
+      "trial": 13,
+      "netSOL": 0.441611557,
+      "maxDrawdown": 0.012498479313497882,
+      "mints": 52,
+      "failed": 4
+    },
+    {
+      "trial": 14,
+      "netSOL": 0.434996171,
+      "maxDrawdown": 0.01571055933698777,
+      "mints": 54,
+      "failed": 1
+    },
+    {
+      "trial": 15,
+      "netSOL": 0.422436912,
+      "maxDrawdown": 0.01572933510270431,
+      "mints": 52,
+      "failed": 2
+    },
+    {
+      "trial": 16,
+      "netSOL": 0.404283513,
+      "maxDrawdown": 0.015756553413751064,
+      "mints": 52,
+      "failed": 2
+    },
+    {
+      "trial": 17,
+      "netSOL": 0.419940872,
+      "maxDrawdown": 0.01575260838760736,
+      "mints": 53,
+      "failed": 2
+    },
+    {
+      "trial": 18,
+      "netSOL": 0.471428547,
+      "maxDrawdown": 0.017479463123297564,
+      "mints": 52,
+      "failed": 5
+    },
+    {
+      "trial": 19,
+      "netSOL": 0.493588811,
+      "maxDrawdown": 0.011970201020686851,
+      "mints": 52,
+      "failed": 3
+    },
+    {
+      "trial": 20,
+      "netSOL": 0.442002557,
+      "maxDrawdown": 0.016033774969972117,
+      "mints": 54,
+      "failed": 4
+    }
+  ],
+  "summary": {
+    "positive": 20,
+    "min": 0.337632267,
+    "median": 0.434971037,
+    "max": 0.493588811
+  }
+}

@@ -1,0 +1,25 @@
+(node:6) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+(Use `node --trace-warnings ...` to show where the warning was created)
+kit memecoin-backtest-48h-01 dev: verified 38 files
+dataset src-calib: 128058 events
+bot <KIT>/baselines/pilot/sniper @ worktree@44ce9a9c84a7: 6 entries
+grading: two executions
+memecoin-backtest-48h-01 dev, driver process
+bot       <KIT>/baselines/pilot/sniper @ worktree@44ce9a9c84a7
+status    finished
+net PnL   -0.500459286 SOL  (return -0.050045928, 90% interval -0.695919491 .. -0.301002382 SOL)
+top coins 3 coins made 35% of the gains; without them net PnL is -0.60 SOL
+trading   843 fills over 351 coins, 351 round trips, win rate 0.122507122, max drawdown 0.054387579, 0 rejected, 17 failed
+fees      0.235878062 SOL curve + 0.090300000 SOL tx; at 2x fees net PnL -0.818759443 SOL
+guardrails met (coins ok: 268 hold a round trip of at least 0.010000000 SOL, over 268 such round trips, drawdown ok)
+cost      unpriced over 0 usage lines (provenance none)
+authored  0.000000000 of 834 counted lines
+eligible  ranked yes, prize no, efficiency no (no_transcripts, coverage_below_gate, cost_unpriced, below_hold_cash)
+flags     chain_warnings, fee_fallback
+action_log_sha256 f1fe4e81a2f7c479411788e292c00b755b87159318d05a32e55655f87e946dea
+result_sha256     e8593398bf1eb76051111adf90e4b744736c0aa21e3487ac989f80d29756bec5
+L1 regrade        reproduced byte for byte
+entry             not a house account's, not a baseline, no transcripts (--house, --baseline and the transcripts are part of the score)
+the kit's grader is this checkout's; nothing was compared: a server grading with the process driver records this result_sha256 only for this code entered as the entry line says (give its result_sha256 with --expect to compare)
+note: the kit holds 1 file(s) kit.json does not list (not read): package.json
+note: process driver: the bot ran on this machine unisolated and the score records no image digest; a server grading in its docker sandbox records one, so only a server on the process driver (a dev server) records this result_sha256

@@ -1,0 +1,39 @@
+(node:23) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+(Use `node --trace-warnings ...` to show where the warning was created)
+kit memecoin-backtest-48h-01 dev: verified 38 files
+dataset src-calib: 128058 events
+bot <V2_BOT> @ fac4ca847aff651a3794af888f2b2ec5b6fa2e53: 20 entries
+grading: two executions
+stress 1/10: blocks-01 net PnL -0.65 SOL (10.9s)
+stress 2/10: blocks-03 net PnL -0.30 SOL (38.1s)
+stress 3/10: blocks-02 net PnL -0.85 SOL (61.9s)
+stress 4/10: blocks-05 net PnL -0.91 SOL (11.1s)
+stress 5/10: blocks-04 net PnL -0.36 SOL (47.8s)
+stress 6/10: blocks-06 net PnL 0.08 SOL (70.5s)
+stress 7/10: blocks-08 net PnL -0.19 SOL (9.9s)
+stress 8/10: blocks-07 net PnL -0.04 SOL (68.6s)
+stress 9/10: blocks-09 net PnL -0.87 SOL (43.6s)
+stress 10/10: blocks-10 net PnL 0.04 SOL (10.2s)
+memecoin-backtest-48h-01 dev, driver process
+bot       <V2_BOT> @ fac4ca847aff651a3794af888f2b2ec5b6fa2e53 (uncommitted changes not graded)
+status    finished
+net PnL   -0.337092252 SOL  (return -0.033709225, 90% interval -0.801073585 .. 0.120379197 SOL)
+top coins 3 coins made 61% of the gains; without them net PnL is -0.64 SOL
+trading   84 fills over 42 coins, 42 round trips, win rate 0.285714285, max drawdown 0.036643064, 8 rejected, 2 failed
+fees      0.153372020 SOL curve + 0.009030000 SOL tx; at 2x fees net PnL -0.493623283 SOL
+guardrails met (coins ok: 42 hold a round trip of at least 0.010000000 SOL, over 42 such round trips, drawdown ok)
+stress    10 block surrogates of the dev window: median -0.36, p10 -0.91, p90 0.04 SOL; 8 of 10 lost money; the dev score is above 5 of 10
+note      rebuilt copies show how much this score depends on the window's own coins; they are not a forecast of another window
+warning   half or more of the rebuilt copies lost money
+cost      unpriced over 0 usage lines (provenance none)
+authored  0.000000000 of 419 counted lines
+eligible  ranked yes, prize no, efficiency no (no_transcripts, coverage_below_gate, cost_unpriced, below_hold_cash)
+flags     chain_warnings, fee_fallback
+action_log_sha256 57769123eee9b4140a2501a8f97f77977f5667cbc46e741371aa07b70774b1ef
+result_sha256     1b1184df92ca982c14104e3dd5d540e6cbad897f67507ddc5c138e705c560bd7
+L1 regrade        reproduced byte for byte
+entry             not a house account's, not a baseline, no transcripts (--house, --baseline and the transcripts are part of the score)
+the kit's grader is this checkout's; nothing was compared: a server grading with the process driver records this result_sha256 only for this commit entered as the entry line says (give its result_sha256 with --expect to compare)
+note: the kit holds 1 file(s) kit.json does not list (not read): package.json
+note: <V2_BOT> has uncommitted changes, which are not graded (the server grades the commit; --worktree grades the files as they are)
+note: process driver: the bot ran on this machine unisolated and the score records no image digest; a server grading in its docker sandbox records one, so only a server on the process driver (a dev server) records this result_sha256

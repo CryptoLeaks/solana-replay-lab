@@ -1,0 +1,33 @@
+{
+  "windows": [
+    {
+      "startTimeInclusive": 1793588943,
+      "endTimeExclusive": 1793632143,
+      "endSlot": 464540287,
+      "firstEventSlot": 464338836,
+      "lastEventSlot": 464540273,
+      "createdMints": 490,
+      "events": 55932
+    },
+    {
+      "startTimeInclusive": 1793632143,
+      "endTimeExclusive": 1793675343,
+      "endSlot": 464741876,
+      "firstEventSlot": 464540538,
+      "lastEventSlot": 464741859,
+      "createdMints": 732,
+      "events": 70237
+    }
+  ],
+  "coinCohortsOverlap": 0,
+  "capitalPerWindowLamports": "10000000000",
+  "allManifestChunksLoaded": 3,
+  "allManifestEventCount": 128058,
+  "excludedMints": [
+    {
+      "mint": "2PpEAUY3TLdAcEhRDmrdgV4U8E2chg9nz2iKDaYQpump",
+      "reason": "still broken after 12 repair rounds at slot 464608220"
+    }
+  ],
+  "note": "No pre-window coins enter subsequent windows. In-window lifetimes truncated at boundary; open positions forced closed and pending after boundary rejected. Per-window sequence restarts, changing keyed failure draws."
+}
